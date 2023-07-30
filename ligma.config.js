@@ -1,5 +1,10 @@
 module.exports = {
     dsa: [
+        "InsertionSort",
+        "MergeSort",
+        "QuickSort",
+        "DijkstraList",
+        "PrimsList",
         "DFSOnBST",
         "LRU",
         "LinearSearchList",
@@ -18,12 +23,10 @@ module.exports = {
         "BTPostOrder",
         "BTBFS",
         "CompareBinaryTrees",
-        "DFSOnBST",
         "DFSGraphList",
         "Trie",
         "BFSGraphMatrix",
         "Map",
         "MinHeap",
     ],
-}
-
+};

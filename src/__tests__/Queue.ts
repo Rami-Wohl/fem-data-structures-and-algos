@@ -21,6 +21,8 @@ test("queue", function () {
     expect(list.peek()).toEqual(11);
     expect(list.deque()).toEqual(11);
     expect(list.deque()).toEqual(undefined);
+    expect(list.deque()).toEqual(undefined);
+    expect(list.peek()).toEqual(undefined);
     expect(list.length).toEqual(0);
 
     // just wanted to make sure that I could not blow up myself when i remove
@@ -28,4 +30,6 @@ test("queue", function () {
     list.enqueue(69);
     expect(list.peek()).toEqual(69);
     expect(list.length).toEqual(1);
+    expect(list.deque()).toEqual(69);
+    expect(list.length).toEqual(0);
 });

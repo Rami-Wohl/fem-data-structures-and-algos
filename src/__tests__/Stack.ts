@@ -16,12 +16,17 @@ test("stack", function () {
     expect(list.peek()).toEqual(5);
     expect(list.pop()).toEqual(5);
     expect(list.pop()).toEqual(undefined);
+    expect(list.pop()).toEqual(undefined);
+    expect(list.pop()).toEqual(undefined);
+    expect(list.length).toEqual(0);
 
     // just wanted to make sure that I could not blow up myself when i remove
     // everything
     list.push(69);
     expect(list.peek()).toEqual(69);
     expect(list.length).toEqual(1);
+    expect(list.pop()).toEqual(69);
+    expect(list.length).toEqual(0);
 
     //yayaya
 });
