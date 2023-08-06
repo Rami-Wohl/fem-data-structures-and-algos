@@ -47,9 +47,8 @@ export default class DoublyLinkedList<T> {
 
             newNode.next = tmp;
             tmp.prev = newNode;
+            this.length++;
         }
-
-        this.length++;
     }
 
     append(item: T): void {
