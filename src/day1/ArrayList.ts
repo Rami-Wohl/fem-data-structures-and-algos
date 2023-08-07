@@ -96,6 +96,12 @@ export default class ArrayList<T> {
         return this.buffer[idx];
     }
 
+    update(idx: number, value: T): void {
+        if (this.get(idx)) {
+            this.buffer[idx] = value;
+        }
+    }
+
     removeAt(idx: number): T | undefined {
         if (idx < 0 || idx >= this.length) return undefined;
 

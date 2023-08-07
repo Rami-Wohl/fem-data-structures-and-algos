@@ -1,3 +1,8 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Queue_1 = require("./day1/Queue");
+var q = new Queue_1.default();
+q.enqueue("I'm in a queue");
 var a = [];
 function time(fn) {
     var now = Date.now();
